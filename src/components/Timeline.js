@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 
 
-const Nontification = () => {
+const Timeline = () => {
 
     const [todos, setTodos] = useState(() => {
         const savedTodos = localStorage.getItem("todos");
@@ -43,26 +43,21 @@ const Nontification = () => {
     console.log(todos)
     return (
         <div className="App1">
-            <h1>Todo</h1>
+            <h1>Timeline</h1>
             <form onSubmit={handleFormSubmit}>
                 <input type="text" name="todo" placeholder="Create a new todo" value={todo} onChange={handleInputChange} />
-
             </form>
             <ul className="todo-list">
                 {todos.map((todo) => (
                     <li key={todo.id}>{todo.text}
                         {" "}
                         <button onClick={() => handleDeleteClick(todo.id)}>X</button>
-
-
                     </li>
-                ))
-
-                }
+                ))}
             </ul>
         </div>
 
     )
 }
 
-export default Nontification;
+export default Timeline;

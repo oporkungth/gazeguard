@@ -22,7 +22,7 @@ export const signInWithGoogle = () => auth.signInWithPopup(provider);
 const db = firebase.database();
 
 const rootRef = firebase.database().ref().child('react');
-firebase.get(firebase.child(rootRef, "MpaAra2BCp2LDoM_q8f")).then((snapshot) => {
+/* firebase.get(firebase.child(rootRef, "MpaAra2BCp2LDoM_q8f")).then((snapshot) => {
   if (snapshot.exists()) {
     console.log(snapshot.val());
   } else {
@@ -30,6 +30,6 @@ firebase.get(firebase.child(rootRef, "MpaAra2BCp2LDoM_q8f")).then((snapshot) => 
   }
 }).catch((error) => {
   console.error(error);
-});
+}); */
 
 export default firebase;

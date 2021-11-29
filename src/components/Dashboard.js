@@ -20,8 +20,6 @@ const DashBoard = () => {
               <h1 className="eff">
               <ReactTypingEffect text={['GazeGuard']} speed={300} eraseDelay={50} className="typingeffect" /> 
               </h1>
-              
-            
         </div>
             <Social />
       </div>
